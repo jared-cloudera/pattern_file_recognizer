@@ -1,0 +1,6 @@
+.pypirc
+.python-version
+.idea/
+__pycache__/
+.venv/
+.claude/

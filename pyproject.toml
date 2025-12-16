@@ -1,0 +1,28 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "pattern-file-recognizer"
+version = "0.1.0"
+description = "Presidio recognizer for pattern matching from text and CSV files"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "build>=1.4.0",
+    "coverage>=7.13.3",
+    "flashtext>=2.7",
+    "pip>=26.0.1",
+    "presidio-analyzer>=2.2.360",
+    "pytest>=9.0.2",
+    "twine>=6.2.0",
+]
+license = "MIT"
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=8.0.0",
+]
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/pattern_file_recognizer"]
