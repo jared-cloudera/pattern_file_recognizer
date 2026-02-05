@@ -18,7 +18,7 @@ from pattern_file_recognizer import PatternFileRecognizer
 recognizer = PatternFileRecognizer(
     patterns_files=['customers.txt', ('products.csv', 'product_name')],
     allowlist_files=['common_words.txt'],
-    entity_type='CUSTOMER_ORG',
+    entity_type='INTERNAL_NAME',
     csv_column='name',        # default column for CSV files
 )
 
